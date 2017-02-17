@@ -15,7 +15,7 @@ import java.io.Serializable;
  * @author 颜宁<br>
  *         2016年5月30日下午3:33:25<br>
  */
-public class ObjectFileManager {
+public class ObjectFileUtils {
 	private static final String SUFFIX = ".dat";
 	/**
 	 * 持久化对象的存储目录
@@ -25,7 +25,7 @@ public class ObjectFileManager {
 	/**
 	 * 文件夹初始化 (例如：vd/sd/)
 	 */
-	public ObjectFileManager(String path) {
+	public ObjectFileUtils(String path) {
 		File file = new File(this.path = path);
 		if (!file.exists()) {
 			file.mkdirs();
